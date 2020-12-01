@@ -8,7 +8,8 @@ soup = BeautifulSoup(src, 'lxml')
 
 newest_post = soup.find('h2', class_='post-title')
 for a in newest_post.find_all('a', href=True):
-    print(a['href'])
+    table = [a['href']]
+    print(table[0])
 
 input()
 
